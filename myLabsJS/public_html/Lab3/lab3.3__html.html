@@ -6,7 +6,24 @@
     </head>
     <body>
         <script>
-            
+            function sum(a) 
+            {
+
+                var cSum = a;
+
+                function sub(b) 
+                {
+                    cSum += b;
+                    return sub;
+                }
+
+                sub.toString = function()
+                {
+                    return cSum;
+                }; 
+
+                return sub;
+            }
         </script>
     </body>
 </html>

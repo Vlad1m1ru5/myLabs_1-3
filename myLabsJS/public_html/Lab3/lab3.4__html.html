@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> lab 3.4 </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function Calculator() 
+            {
+                this.read = function() 
+                {
+                    this.x = +prompt('x?', 0);
+                    this.y = +prompt('y?', 0);
+                };
+
+                this.sum = function() 
+                {
+                    return this.x + this.y;
+                };
+
+                this.mul = function() 
+                {
+                    return this.x * this.y;
+                };
+            }
+
+            var calculator = new Calculator();
+            
+            calculator.read();
+            alert("Сумма = " + calculator.sum());
+            alert("Произведение = " + calculator.mul());
+        </script>
+    </body>
+</html>
