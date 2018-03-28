@@ -1,0 +1,32 @@
+<!DOCTYPE html>             
+<html>                      
+    <head>                  
+        <title> lab 1.14 </title>
+        <meta charset="UTF-8">
+    </head>                 
+    <body>                  
+        <script>            
+            isSimpl = true;
+            left = 2;       
+            right = 10; 
+            str = "";
+                            
+            while(left < right + 1)
+            {           
+                if(left <= 1)
+                    isSimpl = false;
+                else    
+                    for(i = 1; i < left / 2 + 1; i++)
+                        isSimpl = (left % i === 0) ? false : true;
+                            
+                    if(isSimpl)
+                        str += ", " + left; 
+                            
+                left++; 
+            }           
+                
+            alert(str);
+        </script>           
+    </body>                 
+</html>                     
+                        
