@@ -1,0 +1,31 @@
+<!DOCTYPE html>             
+<html>                      
+    <head>                  
+        <title> lab 2.6 </title>
+        <meta charset="UTF-8">
+    </head>                 
+    <body>                  
+        <script>
+            function fib(n)
+            {
+                var tmp = 1,
+                    tmp1 = 1;
+                
+                for(var i = 3; i <= n; i++) 
+                {
+                    var tmp2 = tmp + tmp1;
+                    
+                    tmp = tmp1;
+                    tmp1 = tmp2;
+                }
+  
+                return tmp1;
+            }
+            
+            alert(fib(3));
+            alert(fib(7));
+            alert(fib(77));
+        </script>           
+    </body>                 
+</html>                     
+                        
